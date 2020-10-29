@@ -1,0 +1,17 @@
+#titel {
+  text-align: center;
+  font-size: 30px;
+}
+
+#canvas1 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#canvas2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
