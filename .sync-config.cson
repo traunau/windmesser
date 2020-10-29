@@ -1,0 +1,22 @@
+remote:
+    host: "winni"       # server name or ip or ssh host abbr in .ssh/config
+    user: "pi"        # ssh username
+    path: "/home/pi/nodework"      # e.g. /home/someone/somewhere
+    port: "22"        # optional; defaults to 22
+
+behaviour:
+    uploadOnSave: true      # Upload every time you save a file
+    syncDownOnOpen: true    # Download every time you open a file
+    forgetConsole: false    # Never show console panel even while syncing
+    autoHideConsole: true   # Hide console automatically after 1.5s
+    alwaysSyncAll: false    # Sync all files and folders under the project \
+                            # instead of syncing single file or folder
+option:
+    deleteFiles: true       # Delete files during syncing
+    exclude: [              # Excluding patterns
+        '.sync-config.cson'
+        '.git'
+        'node_modules'
+        'tmp'
+        'vendor'
+    ]
